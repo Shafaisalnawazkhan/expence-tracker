@@ -1,0 +1,4 @@
+/* Academy categories live in the desktop sidebar; the compact bar is mobile-only. */
+.finance-nav{display:none!important}
+@media(max-width:1050px){.finance-nav{display:block!important;position:sticky!important;top:0;margin:-44px calc(clamp(28px,5vw,72px) * -1) 26px!important}.academy-side{display:none!important}}
+@media(max-width:700px){.finance-nav{top:56px!important;margin:-6px -18px 22px!important}}

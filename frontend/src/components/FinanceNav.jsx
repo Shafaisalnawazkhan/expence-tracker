@@ -1,0 +1,3 @@
+import { NavLink } from 'react-router-dom';
+import { guideSections,slugify } from '../content/guides';
+export default function FinanceNav(){return <div className="finance-nav"><div className="finance-nav-scroll">{guideSections.map(section=><div className="mega-item" key={section.slug}><NavLink to={`/learn/${section.slug}`}>{section.label}</NavLink><div className="mega-menu">{section.groups.map(([group,items])=><div key={group}><strong>{group}</strong>{items.map(item=><NavLink key={item} to={`/learn/${section.slug}?article=${slugify(item)}`}>{item}</NavLink>)}</div>)}</div></div>)}</div></div>}
