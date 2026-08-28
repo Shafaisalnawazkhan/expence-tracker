@@ -1,0 +1,17 @@
+{
+  "name": "Northstar Money",
+  "short_name": "Northstar",
+  "description": "Smart finance tracking and practical money guidance.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f7f8f3",
+  "theme_color": "#176b50",
+  "icons": [
+    {
+      "src": "/northstar-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

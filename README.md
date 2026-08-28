@@ -1,6 +1,10 @@
-# Smart Finance Tracker
+<p align="center">
+  <img src="frontend/public/northstar-icon.svg" width="96" alt="Northstar Money logo" />
+</p>
 
-A modular final-year project combining a FastAPI finance application with an explainable Random Forest categorizer, a Linear Regression spending forecast, and auditable rule-based budget alerts.
+# Northstar Money
+
+A modular smart finance tracker combining a FastAPI finance application with an explainable Random Forest categorizer, a Linear Regression spending forecast, and auditable rule-based budget alerts.
 
 ## Quick start
 
