@@ -1,14 +1,28 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "experimentalServices": {
+  "services": {
     "frontend": {
       "root": "frontend",
-      "mountPath": "/",
       "framework": "vite"
     },
     "backend": {
-      "root": "backend",
-      "mountPath": "/api"
+      "root": "backend"
     }
-  }
+  },
+  "rewrites": [
+    {
+      "source": "/api(/.*)?",
+      "destination": {
+        "type": "service",
+        "service": "backend"
+      }
+    },
+    {
+      "source": "/(.*)",
+      "destination": {
+        "type": "service",
+        "service": "frontend"
+      }
+    }
+  ]
 }
