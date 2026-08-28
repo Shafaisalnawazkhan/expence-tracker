@@ -1,7 +1,8 @@
 import axios from 'axios';
 
 const developmentApi = `${window.location.protocol}//${window.location.hostname}:8000/api`;
-const baseURL = import.meta.env.VITE_API_URL || developmentApi;
+const deployedApi = '/api';
+const baseURL = import.meta.env.VITE_API_URL || (import.meta.env.DEV ? developmentApi : deployedApi);
 const api = axios.create({ baseURL });
 let refreshRequest = null;
 
